@@ -170,7 +170,7 @@ a.team-btn:active{
   .fas.fa-lightbulb{
       color:aliceblue;
       text-shadow:0px 0px 10px aliceblue , -2px -2px 10px aliceblue;
-      transition: all 0.5s;
+      transition: all 0.25s;
   }
 
   .fa-lightbulb:nth-of-type(1){
