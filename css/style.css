@@ -70,13 +70,13 @@ a.team-btn:active{
 }
 
 
-.header ul{
+.header ul, .mobile ul{
     padding: 0;
     margin: 0;
     display: flex;
   }
 
-  .header ul li{
+  .header ul li, .mobile ul li{
     list-style-type: none;
     color:#fff;
     font-size: 100px;
@@ -115,55 +115,55 @@ a.team-btn:active{
       }
   }
 
-  .header ul li:nth-child(1) {
+  ul li:nth-child(1) {
     animation-delay: 0s;
     color:#FFF47D;
   }
-  .header ul li:nth-child(2) {
+  ul li:nth-child(2) {
     animation-delay:  0.4s;
     color:#FF4848;
   }
-  .header ul li:nth-child(3) {
+  ul li:nth-child(3) {
     animation-delay: 0.8s;
     color:#64C9CF;
   }
-  .header ul li:nth-child(4) {
+  ul li:nth-child(4) {
     animation-delay: 1.2s;
     color:#50CB93;
   }
-  .header ul li:nth-child(5) {
+  ul li:nth-child(5) {
     animation-delay: 1.6s;
     color:#A03C78;
   }
-  .header ul li:nth-child(6) {
+  ul li:nth-child(6) {
     animation-delay: 2s;
     color:#FFD523;
   }
-  .header ul li:nth-child(7) {
+  ul li:nth-child(7) {
     animation-delay: 2.4s;
     color:#7C83FD;
   }
-  .header ul li:nth-child(8) {
+  ul li:nth-child(8) {
     animation-delay: 2.8s;
     color:#DF5E5E;
   }
-  .header ul li:nth-child(9) {
+  ul li:nth-child(9) {
     animation-delay: 3.2s;
     color:#F9F9F9;
   }
-  .header ul li:nth-child(10) {
+  ul li:nth-child(10) {
     animation-delay: 3.6s;
     color:#FF7600;
   }
-  .header ul li:nth-child(11) {
+  ul li:nth-child(11) {
     animation-delay: 4s;
     color:#78DEC7;
   }
-  .header ul li:nth-child(12) {
+  ul li:nth-child(12) {
     animation-delay: 4.4s;
     color:#A3A847;
   }
-  .header ul li:nth-child(13) {
+  ul li:nth-child(13) {
     animation-delay: 4.8s;
     color:#E93B81;
   }
@@ -355,7 +355,7 @@ a.team-btn:active{
   }
 
   @media (max-width:800px) {
-    .header ul li{
+    .header .hbd-container ul li{
         font-size: 30px;
         font-weight: 300;
     }
@@ -390,17 +390,27 @@ a.team-btn:active{
     .mobile{
       display: block;
     }
+
+    .mobile ul{
+      display: none;
+    }
 }
 
 @media (max-width:600px) {
-  .header ul li, .quote .text a, .hbd-container, .quote, .quote::before, .quote .text{
+  .header, .machine, .header ul li, .hbd-container, .quote, .quote::before, .quote .text{
   display: none;
 }
 
-  .mobile{
+.mobile, .mobile ul{
   display: block;
 }
 
+.mobile ul li{
+  font-size: 15px;
+}
+p.mobile{
+  margin-top: 100px;
+}
 }
   
 
