@@ -397,6 +397,9 @@ a.team-btn:active{
   display: none;
 }
 
+  .mobile{
+  display: block;
+}
 
 }
   
