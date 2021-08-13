@@ -18,7 +18,11 @@ body{
 
 .header{
     width: 100%;
-    height: 30%;
+    height: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hbd-container{
@@ -70,17 +74,21 @@ a.team-btn:active{
     padding: 0;
     margin: 0;
     display: flex;
-    padding: 30px;
   }
 
   .header ul li{
     list-style-type: none;
     color:#fff;
     font-size: 100px;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     font-weight: bold;
 
+  
     opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     animation-name: hbdani;
     animation-duration: 2s;
@@ -388,6 +396,7 @@ a.team-btn:active{
   .header ul li, .quote .text a, .hbd-container, .quote, .quote::before, .quote .text{
   display: none;
 }
+
 
 }
   
