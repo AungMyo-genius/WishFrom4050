@@ -2,6 +2,15 @@ const bulbons = document.querySelectorAll(".fa-lightbulb");
 const bulbborder = document.querySelector(".hbd-container");
 const machine = document.querySelector(".machine");
 const presentbtn = document.querySelector("#present-btn");
+const canvasC = document.getElementById('c');
+
+function hideEverything(){
+    canvasC.style.display = 'none';
+}
+hideEverything();
+const confettiSettings = { target: 'confetti' };
+    const confetti = new window.ConfettiGenerator(confettiSettings);
+    confetti.render();
 
 const bulb1 = document.querySelectorAll(".fa-lightbulb:nth-of-type(1)");
 const bulb2 = document.querySelectorAll(".fa-lightbulb:nth-of-type(2)");
@@ -43,7 +52,7 @@ machine.addEventListener("mousemove", (e)=>{
     bulb7[0].style.color = `rgba(${e.offsetY}, 125, ${e.offsetX} ,0.7)`;
     bulb8[0].style.color = `rgba(${e.offsetX}, ${e.offsetY}, ${e.offsetY} ,0.7)`;
     
-    
+
     bulbborder.style.borderColor = "#FFF47D";
 })
 machine.addEventListener("mouseleave", (e)=>{
