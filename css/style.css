@@ -282,7 +282,7 @@ a.team-btn:active{
     content: "Hover to see";
     width: 99.5%;
     height: 100%;
-    background-color: #1a2b34;
+    background-color: rgba(26, 43, 52, 0.8);
     color:aliceblue;
 
     position: absolute;
